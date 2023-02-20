@@ -1,0 +1,18 @@
+{
+    "ontology": {
+      "romance": ["christmas", "shakespeare"],
+      "animated": ["disney", "dreamworks"],
+      "drama": ["action", "musical", "korean"],
+      "christmas": ["a castle for christmas", "the princess switch"],
+      "shakespeare": ["rosaline", "shakespeare in love"],
+      "disney": ["tangled", "beauty and the beast", "the little mermaid"],
+      "dreamworks": ["puss in boots", "shrek 2"],
+      "action": ["the woman king"],
+      "musical": ["la la land"],
+      "korean": ["minari", "parasite"]
+  },
+
+  "expressions": {
+    "christmas": ["holiday"]
+  }
+}
