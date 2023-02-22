@@ -28,6 +28,86 @@ def movies() -> DialogueFlow:
                             }
                         }
                     },
+                    '[#ONT(musical)]': {
+                        '`Do you think musicals are better than regular movies?`': {
+                            'error': {
+                                '`I like both. What do you look for in dramatic movies?`': {
+                                    'error': {
+                                        '`I think the cinematography in dramatic movies can be super suspenseful personally.`': {
+                                            'error': {
+                                                '`That\'s a good point. Thank\'s for chatting with me!`': 'end'
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    '[#ONT(old)]': {
+                        '`Do you prefer black and white movies to those in color?`': {
+                            'error': {
+                                '`I think black and white has charm. What do you look for in dramatic movies?`': {
+                                    'error': {
+                                        '`I think the cinematography in dramatic movies can be super suspenseful personally.`': {
+                                            'error': {
+                                                '`That\'s a good point. Thank\'s for chatting with me!`': 'end'
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    '[#ONT(historical)]': {
+                        '`Are you a history buff?`': {
+                            'error': {
+                                '`I failed history in high school. What do you look for in dramatic movies?`': {
+                                    'error': {
+                                        '`I think the cinematography in dramatic movies can be super suspenseful personally.`': {
+                                            'error': {
+                                                '`That\'s a good point. Thank\'s for chatting with me!`': 'end'
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    '[#ONT(cameron)]': {
+                        '`What do you think about James Cameron`': {
+                            'error': {
+                                '`I literally don\'t have an opinion of him. How important are special effects in sci-fi movies?`': {
+                                    'error': {
+                                        '`I think cgi can feel a little fake sometimes, they don\'t have practical effect\'s charms.`': {
+                                            'error': {
+                                                '`That\'s a good point. Thank\'s for chatting with me!`': 'end'
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    '[#ONT(starwars)]': {
+                        '`Are you a C3PO or RD-D2 stan?`': {
+                            'error': {
+                                '`RD-D2 has always had my heart. How important are special effects in sci-fi movies?`': {
+                                    'error': {
+                                        '`I think cgi can feel a little fake sometimes, they don\'t have practical effect\'s charms.`': {
+                                            'error': {
+                                                '`That\'s a good point. Thank\'s for chatting with me!`': 'end'
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
                     '[#ONT(christmas)]': {
                         '`Do you like Christmas?`': {
                             'error': {
@@ -82,21 +162,6 @@ def movies() -> DialogueFlow:
                                         '`I think animation is a super creative medium.`': {
                                             'error': {
                                                 '`Yeah, totally. Thanks for chatting with me!`': 'end'
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    '[#ONT(musical)]': {
-                        '`Do you think Ryan Reynolds discovered jazz?`': {
-                            'error': {
-                                '`I\'m just joking! What do you look for in dramatic movies?`': {
-                                    'error': {
-                                        '`I think the cinematography in dramatic movies can be super suspenseful personally.`': {
-                                            'error': {
-                                                '`That\'s a good point. Thank\'s for chatting with me!`': 'end'
                                             }
                                         }
                                     }
@@ -144,6 +209,102 @@ def movies() -> DialogueFlow:
                             }
                         }
                     },
+                    '[#ONT(musical)]': {
+                        '`Do you think musicals are better than regular movies?`': {
+                            'error': {
+                                '`I like both. What do you look for in dramatic movies?`': {
+                                    'error': {
+                                        '`I think the cinematography in dramatic movies can be super suspenseful personally.`': {
+                                            'error': {
+                                                '`That\'s a good point. Thank\'s for chatting with me!`': 'end'
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    '[#ONT(oldmovies)]': {
+                        '`Do you prefer black and white movies to those in color?`': {
+                            'error': {
+                                '`I think black and white has charm. What do you look for in dramatic movies?`': {
+                                    'error': {
+                                        '`I think the cinematography in dramatic movies can be super suspenseful personally.`': {
+                                            'error': {
+                                                '`That\'s a good point. Thank\'s for chatting with me!`': 'end'
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    '[#ONT(historical)]': {
+                        '`Are you a history buff?`': {
+                            'error': {
+                                '`I failed history in high school. What do you look for in dramatic movies?`': {
+                                    'error': {
+                                        '`I think the cinematography in dramatic movies can be super suspenseful personally.`': {
+                                            'error': {
+                                                '`That\'s a good point. Thank\'s for chatting with me!`': 'end'
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    '[#ONT(sports)]': {
+                        '`What\'s your favorite sport?`': {
+                            'error': {
+                                '`I like tennis the most. What do you look for in dramatic movies?`': {
+                                    'error': {
+                                        '`I think the cinematography in dramatic movies can be super suspenseful personally.`': {
+                                            'error': {
+                                                '`That\'s a good point. Thank\'s for chatting with me!`': 'end'
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    '[#ONT(cameron)]': {
+                        '`What do you think about James Cameron`': {
+                            'error': {
+                                '`I literally don\'t have an opinion of him. How important are special effects in sci-fi movies?`': {
+                                    'error': {
+                                        '`I think cgi can feel a little fake sometimes, they don\'t have practical effect\'s charms.`': {
+                                            'error': {
+                                                '`That\'s a good point. Thank\'s for chatting with me!`': 'end'
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    '[#ONT(starwars)]': {
+                        '`Are you a C3PO or RD-D2 stan?`': {
+                            'error': {
+                                '`RD-D2 has always had my heart. How important are special effects in sci-fi movies?`': {
+                                    'error': {
+                                        '`I think cgi can feel a little fake sometimes, they don\'t have practical effect\'s charms.`': {
+                                            'error': {
+                                                '`That\'s a good point. Thank\'s for chatting with me!`': 'end'
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
                     '[#ONT(christmas)]': {
                         '`Do you like Christmas?`': {
                             'error': {
@@ -205,14 +366,15 @@ def movies() -> DialogueFlow:
                             }
                         }
                     },
-                    '[#ONT(musical)]': {
-                        '`Do you think Ryan Reynolds discovered jazz?`': {
+                    '[#ONT(tolkein)]': {
+                        '`Frodo or Bilbo?`': {
                             'error': {
-                                '`I\'m just joking! What do you look for in dramatic movies?`': {
+                                '`I wish I could be a hobbit. Do generally like fantasy movies?`': {
                                     'error': {
-                                        '`I think the cinematography in dramatic movies can be super suspenseful personally.`': {
+                                        '`Fantasy worlds are a nice escape from the real world.`': {
                                             'error': {
                                                 '`That\'s a good point. Thank\'s for chatting with me!`': 'end'
+
                                             }
                                         }
                                     }
@@ -220,16 +382,79 @@ def movies() -> DialogueFlow:
                             }
                         }
                     },
-                    '[#ONT(action)]': {
-                        '`Do you know a lot about African history?`': {
+                    '[#ONT(marvel)]': {
+                        '`Which Avenger\'s superpower would you want most?`': {
                             'error': {
-                                '`I want to take a course so I can learn more. What do you look for in dramatic '
-                                'movies?`': {
+                                '`I would want to be able to fly. Do you think action movies are more exciting because of the fight sequences?`': {
                                     'error': {
-                                        '`I think the cinematography in dramatic movies can be super suspenseful '
-                                        'personally.`': {
+                                        '`I think that fight choreography is an impressive profession.`': {
                                             'error': {
                                                 '`That\'s a good point. Thank\'s for chatting with me!`': 'end'
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    '[#ONT(oscar)]': {
+                        '`Did you know that movie won an oscar?`': {
+                            'error': {
+                                '`Awards don\'t always mean movies are good, but its a nice indicator. What do you look for in dramatic movies?`': {
+                                    'error': {
+                                        '`I think the cinematography in dramatic movies can be super suspenseful personally.`': {
+                                            'error': {
+                                                '`That\'s a good point. Thank\'s for chatting with me!`': 'end'
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    '[#ONT(shyamalan)]': {
+                        '`Are you a fan of a Shyamalan twist?`': {
+                            'error': {
+                                '`Sixth Sense really got me!. Is horror your favorite genre?`': {
+                                    'error': {
+                                        '`I\'m a scaredy-cat.`': {
+                                            'error': {
+                                                '`That\'s cool. Thank\'s for chatting with me!`': 'end'
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    '[#ONT(doll)]': {
+                        '`Are you scared of haunted dolls?`': {
+                            'error': {
+                                '`They terrify me. Is horror your favorite genre?`': {
+                                    'error': {
+                                        '`I\'m a scaredy-cat.`': {
+                                            'error': {
+                                                '`That\'s cool. Thank\'s for chatting with me!`': 'end'
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    '[#ONT(hitchcock)]': {
+                        '`do you like the style of hitchcock movies?`': {
+                            'error': {
+                                '`They terrify me. Is mystery your favorite genre?`': {
+                                    'error': {
+                                        '`I like to try to figure out who the murderer is`': {
+                                            'error': {
+                                                '`That\'s cool. Thank\'s for chatting with me!`': 'end'
+
                                             }
                                         }
                                     }
@@ -243,7 +468,7 @@ def movies() -> DialogueFlow:
                 }
             },
             'error': {
-                '`Sorry I don\'t know who that is.`': 'end'
+                '`Sorry I don\'t know that movie': 'end'
             }
         }
     }

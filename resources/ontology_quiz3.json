@@ -2,14 +2,30 @@
     "ontology": {
       "romance": ["christmas", "shakespeare"],
       "animated": ["disney", "dreamworks"],
-      "drama": ["action", "musical", "korean"],
-      "christmas": ["a castle for christmas", "the princess switch"],
-      "shakespeare": ["rosaline", "shakespeare in love"],
-      "disney": ["tangled", "beauty and the beast", "the little mermaid"],
-      "dreamworks": ["puss in boots", "shrek 2"],
-      "action": ["the woman king"],
-      "musical": ["la la land"],
-      "korean": ["minari", "parasite"]
+      "drama": ["sports", "action", "musical", "korean","oldmovies", "historical"],
+      "action": ["marvel"],
+      "musical": ["la la land", "chicago", "west side story", "sound of music", "singin in the rain", "my fair lady"],
+      "fantasy": ["tolkein"],
+      "horror": ["jaws", "shyamalan", "dolls"],
+      "mystery": ["knives out", "hitchcock", "christie", "sherlock"],
+      "sci-fi": ["cameron", "starwars"],
+      "sports": ["rocky", "million dollar baby", "remember the titans", "the blind side", "42", "field of dreams", "the sandlot", "a league of our own", "creed", "moneyball", "ford v ferrari", "king richard"],
+      "christmas": ["a castle for christmas", "the princess switch", "love hard", "last christmas", "happiest season", "let it snow"],
+      "shakespeare": ["rosaline", "shakespeare in love", "gnomeo and juliet", "10 things I hate about you", "she's the man","watm bodies", "much ado about nothing", "hamlet","a midsummer's night's dream", "romeo and juliet","twelfth night"],
+      "disney": ["tangled", "beauty and the beast", "the little mermaid", "moana", "frozen", "brave", "mulan", "princess and the frog", "raya", "cinderella", "aladdin"],
+      "dreamworks": ["puss in boots", "shrek"],
+      "korean": ["minari", "parasite"],
+      "marvel": ["thor", "avengers", "ant man", "black panther", "spiderman", "iron man", "hulk", "captain america", "guardians of the galaxy", "ant-man","doctor strange", "captain marvel", "black widow", "shang-chi", "eternals"],
+      "cameron": ["terminator", "avatar"],
+      "tolkein": ["fellowship of the ring", "return of the king", "two towers", "lord of the rings", "hobbit"],
+      "oldmovies": ["casablanca", "citizen kane", "gone with the wind", "it's a wonderful life", "to kill a mockingbird"],
+      "hitchcock": ["vertigo", "psycho", "strangers on a train", "dial m for murder", "rear window", "to catch a thief", "north by northwest", "the man who knew too much"],
+      "starwars": ["star wars", "a new hope", "solo", "return of the jedi", "empire strikes back", "phantom menace", "attack of the clones", "revenge of the sith", "the force awakens", "rogue one", "the last jedi", "rise of skywalker"],
+      "oscar": ["godfather", "silence of the lambs", "coda", "nomandland", "shape of water", "green book", "moonlight", "spotlight", "birdman", "fargo","12 years a slave", "argo", "the artist", "slumdog millionaire", "the hurt locker", "crash", "a beautiful mind", "american beauty", "the english patient", "braveheart", "forrest gump", "unforgiven", "dances with wolves"],
+      "historical": ["gladiator", "ammonite", "titanic", "saving private ryan"],
+      "shyamalan": ["knock at the cabin", "old", "glass", "split", "sixth sense", "lady in the water", "after earth", "happening", "the visit","the village", "signs", "unbreakable", "wide awake", "praying with anger"],
+      "doll": ["annabelle", "m3gan", "chucky", "goosebumps", "the boy", "dolls"]
+
   },
 
   "expressions": {
