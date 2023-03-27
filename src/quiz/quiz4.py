@@ -51,10 +51,10 @@ def recommender() -> DialogueFlow:
         'state': 'name',
         '#TIME `by the way!`': {
             '#NAME #VISITS': {
-                '#IF($NEW) `Nice to meet you` $NAME `What would you like a '
+                '#IF($NEW) `Nice to meet you` $NAME `! What would you like a '
                 'recommendation for?`': {
                     'state': 'ask',
-                    '[#LEM(movie)]': 'movie',
+                    '[{#LEM(movie), film}]': 'movie',
                     '[{#LEM(music), #LEM(song)}]': 'music',
                     '[{no, not}]': {
                         '`Oh, okay. I hope you have a good day!`': 'end'
@@ -81,7 +81,7 @@ def recommender() -> DialogueFlow:
                 }
             },
             'error': {
-                '`Whoops!`': 'end'
+                '`Sorry I\'m such an airhead! Can you chat again later?`': 'end'
             }
         }
     }
@@ -90,7 +90,7 @@ def recommender() -> DialogueFlow:
         'state': 'movie',
         '`You should watch` #MOVIES': {
             '[{about, info, information, description}]': {
-                '$REC `is described by IMDB as:` $REC_INFO': {
+                'Let me google that real quick. $REC `is described by IMDB as:` $REC_INFO': {
                     'error': {
                         '`I hope you end up watching` $REC`!`': 'end'
                     }
@@ -105,7 +105,7 @@ def recommender() -> DialogueFlow:
             },
             '[{again, another, seen, saw, already, watched}]':  {
                 '`Song or Movie?`': {
-                    '[#LEM(movie)]': 'movie',
+                    '[{#LEM(movie), film}]': 'movie',
                     '[{#LEM(music), #LEM(song)}]': 'music'
                 }
             },
@@ -113,7 +113,7 @@ def recommender() -> DialogueFlow:
                 '`I hope you have fun! Bye!': 'end'
             },
             'error': {
-                'Bye!': 'end'
+                'Alright then, see you later!': 'end'
             }
         }
     }
@@ -130,14 +130,14 @@ def recommender() -> DialogueFlow:
             '[{cool, okay, ok, thanks, great, amazing, thanks, thx}]': {
                 '`I\'m glad I could help!`': 'end'
             },
-            '[{again, another, seen, saw, already, watched}]': {
-                '`Song or Movie?`': {
-                    '[#LEM(movie)]': 'movie',
+            '[{again, another, heard, listened, already, played}]': {
+                '`Would you like another song or movie recommendation?`': {
+                    '[{#LEM(movie), film}]': 'movie',
                     '[{#LEM(music), #LEM(song)}]': 'music'
                 }
             },
             'error': {
-                '`Alright then!`': 'end'
+                '`Alright then, see you soon!`': 'end'
             }
         }
     }
@@ -190,12 +190,10 @@ class MacroVisits(Macro):
         vn = 'VISITS'
         if vn not in vars:
             vars[vn] = 1
-            vars["NUM"] = 1
             vars['NEW'] = True
         else:
             count = vars[vn] + 1
             vars[vn] = count
-            vars["NUM"] = count
             vars['NEW'] = False
 
 
@@ -229,9 +227,10 @@ def save(df: DialogueFlow, varfile: str):
 def load(df: DialogueFlow, varfile: str):
     d = pickle.load(open(varfile, 'rb'))
     df.vars().update(d)
+    df.run()
     save(df, varfile)
 
 
 if __name__ == '__main__':
-    #save(recommender(), '/Users/safiaread/Pycharmprojects/conversational-ai/resources/recommender.pkl')
+    save(recommender(), '/Users/safiaread/Pycharmprojects/conversational-ai/resources/recommender.pkl')
     load(recommender(), '/Users/safiaread/Pycharmprojects/conversational-ai/resources/recommender.pkl')
