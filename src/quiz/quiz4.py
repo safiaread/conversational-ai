@@ -68,7 +68,7 @@ def recommender() -> DialogueFlow:
                     '[{yes, yeah, sure, uh huh, best, good, great, amazing}]': {
                         '`I\'m glad that you liked it! What else would you like a recommendation for?`': 'ask'
                     },
-                    '[{no, suck, sucked, bad, worst}]': {
+                    '[{no, suck, sucked, bad, worst, #LEM(hate)}]': {
                         '`I\'m sorry about that! Could you give me another shot? What would you like a recommendation '
                         'for?`': 'ask'
                     },
@@ -110,10 +110,10 @@ def recommender() -> DialogueFlow:
                 }
             },
             '[{okay, ok, will do, sure, thanks}]': {
-                '`I hope you have fun! Bye!': 'end'
+                '`I hope you have fun! Bye!`': 'end'
             },
             'error': {
-                'Alright then, see you later!': 'end'
+                '`Alright then, see you later!`': 'end'
             }
         }
     }
@@ -227,10 +227,10 @@ def save(df: DialogueFlow, varfile: str):
 def load(df: DialogueFlow, varfile: str):
     d = pickle.load(open(varfile, 'rb'))
     df.vars().update(d)
-    df.run()
+    print(d)
     save(df, varfile)
 
 
 if __name__ == '__main__':
-    save(recommender(), '/Users/safiaread/Pycharmprojects/conversational-ai/resources/recommender.pkl')
+    #save(recommender(), '/Users/safiaread/Pycharmprojects/conversational-ai/resources/recommender.pkl')
     load(recommender(), '/Users/safiaread/Pycharmprojects/conversational-ai/resources/recommender.pkl')
